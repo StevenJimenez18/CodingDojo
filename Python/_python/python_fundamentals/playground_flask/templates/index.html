@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id='wrapper'>
+        <div id='header'><h1 style="
+            text-align: center;
+            ">{{ phrase }}</h1></div>
+        <div id='boxContainer'style="display: flex; justify-content: center; flex-flow: row wrap">
+            
+            {% if level1or2 == 'True' %}
+                {% for x in range(0,times): %}
+                    <div class='box'style="width: 100px;
+                    height: 100px;
+                    margin: 10px; 
+                    background-color: blue;
+                    border: 1px solid black;
+                    display: inline-block; 
+                    text-align: center;">{{box}}</div>
+                {%endfor%}
+            {%endif%}
+
+            {% if level3 == "True" %}
+                {% for x in range(0,times): %}
+                    <div class='box'style="width: 100px;
+                    height: 100px;
+                    margin: 10px;
+                    background-color: {{textcolor}};
+                    border: 1px solid black;
+                    display: inline-block; 
+                    text-align: center;">{{box}}</div>
+                {% endfor %}
+            {% endif %}
+
+        </div>
+    </div>
+</body>
+</html>

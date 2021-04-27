@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckerBoard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div id='wrapper'>
+            
+        {% if route1or2 == 'True' %}
+            <table>
+            {% for i in range(times): %}
+                <tr>
+                    {% for j in range(times): %}
+                        <td class='box{{ (i+j)%2+1 }}'></td>
+                    {%endfor%}
+                </tr>
+            {%endfor%}
+            </table>
+        {% endif %}
+
+
+        {% if route3 == 'True' %}
+            <table>
+            {% for i in range(row): %}
+                <tr>
+                    {% for j in range(column): %}
+                        <td class='box{{ (i+j)%2+1 }}'></td>
+                    {%endfor%}
+                </tr>
+            {%endfor%}
+            </table>
+        {% endif %}
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+1. pip list
+
+This command showed me a list of all packages installed under pip.
+
+
+2. deactivate (This will deactivate your virtual environment)
+
+This command deactivted my virtual environment.
+
+3. pip3 list (outside of virtual enviornment)
+
+When I ran pip list outside of my virtual environment I recieved a list of different packages compared to the list I recieved when I had my virtual enviornment activated. It was interesting to see that I had already installed django prior to this assignment so the package was availible globally but not in my virtual environment which I created afterwards.
+
+
+4. source myEnvironments/py3Env/bin/activate 
+
+This activated my environment again. 
+
+
+5. pip install Django==2.2.4 (What information do you see returned in terminal after this command?)
+
+I see the process of install from initilzation to completetion. Sort of like downloading a program on the computer but all within the terminal.
+
+
+6. pip freeze (What's the difference between freeze and list?)
+
+My biggest understanding of pip freeze vs pip list is that pip list shows all installed packages while pip freeze shows packages I have installed via pip.
+
+7.First cd into your Desktop directory (cd ~/Desktop), then run this command: pip freeze > requirements.txt. What do you see when you ls? What's inside this file?
+
+I now see a new text file with the packages installed on pip.
+
+pip uninstall Django
+
+This unstialled django from virtual environment.
+
+pip show Django
+
+TThis resulted in an error as django was not found.
+
+pip search Flask This one might take a moment to execute.
+
+This command returned a big list of commands and extensions to use when working with flask.
