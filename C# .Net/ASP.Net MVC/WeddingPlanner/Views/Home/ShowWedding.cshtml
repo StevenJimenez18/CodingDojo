@@ -1,0 +1,20 @@
+@model Wedding
+
+<div class="d-flex justify-content-around">
+
+    <h1>@Model.WedderOne & @Model.WedderTwo's Wedding</h1>
+    <a href="/landingpage" class="btn btn-primary btn-outline-light border border-dark">Dashboard</a>
+    <a href="/logout" class="btn btn-dark btn-outline-light border border-dark">Logout</a>
+</div>
+
+<h3>Date: @Model.Date.ToLongDateString() at @Model.Date.ToLongTimeString()</h3>
+
+<h3>Planned By: @Model.Planner.FirstName @Model.Planner.LastName</h3>
+<h3>Location: @Model.Address</h3>
+<h2>Guests:</h2>
+<ul>
+    @foreach (Rsvp r in Model.GuestList)
+    {
+        <li class="list-group-item">@r.Guest.FirstName @r.Guest.LastName</li>
+    }
+</ul>

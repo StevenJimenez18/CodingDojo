@@ -1,0 +1,44 @@
+@model List<Wedding>
+
+
+<h1 class="text-success text-center">Welcome @ViewBag.User.FirstName @ViewBag.User.LastName</h1>
+<a href="/logout" class="btn btn-dark btn-outline-light border border-dark">Logout</a>
+
+<table class="table table-hover">
+    <thead>
+        <th>Wedding</th>
+        <th>Date</th>
+        <th>Guests</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        @foreach (Wedding w in Model)
+        {
+            <tr>
+                <td><a href="/show/@w.WeddingId">@w.WedderOne & @w.WedderTwo</a></td>
+                <td>@w.Date.ToLongDateString() @w.Date.ToLongTimeString() </td>
+                <td>@w.GuestList.Count</td>
+                <td>
+                    @if (w.Planner.UserId == ViewBag.User.UserId)
+                    {
+                        <a href="/cancel/@w.WeddingId" class="btn btn-primary btn-outline-light">Cancel</a>
+                    }
+                    else
+                    {
+                        if (w.GuestList.Any(r => r.UserId == ViewBag.User.UserId))
+                        {
+                            <a href="/un-rsvp/@w.WeddingId/@ViewBag.User.UserId"
+                                class="btn btn-info btn-outline-light border border-dark">Un-Rsvp</a>
+                        }
+                        else
+                        {
+                            <a href="/attend/@w.WeddingId/@ViewBag.User.UserId"
+                                class="btn btn-warning btn-outline-light border border-dark">Rsvp</a>
+                        }
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/new/wedding" class="btn btn-primary btn-outline-light border border-dark">Plan Wedding</a>
