@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Survey
+
+<div class="card col-5">
+    <div class="card-body">
+        <h2 class="card-title">Name : @Model.FirstName @Model.LastName</h2>
+        <h2 class="card-title">Dojo Location : @Model.Location</h2>
+        <h2 class="card-title">Coding Language : @Model.Language</h2>
+        <h2 class="card-title">Comment : @Model.Comment</h2>
+    </div>
+</div>
+<a href="/" class="btn btn-primary">Home</a>

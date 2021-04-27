@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Survey
+
+<div class="text-center">
+    <form asp-action="Create" asp-controller="Home" method="post" class="col-6 mx-auto">
+        <div class="form-group">
+            <label asp-for="FirstName">First Name</label>
+            <input class="form-control" asp-for="FirstName">
+            <span class="text-danger" asp-validation-for="FirstName"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName">Last Name</label>
+            <input class="form-control" asp-for="LastName">
+            <span class="text-danger" asp-validation-for="LastName"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Location">Dojo Location</label>
+            <select class="form-control" asp-for="Location">
+                <option></option>
+                <option value="Seattle">Seattle</option>
+                <option value="Chicago">Chicago</option>
+                <option value="San Diego">San Diego</option>
+            </select>
+            <span class="text-danger" asp-validation-for="Location"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Language">Coding Language</label>
+            <select class="form-control" asp-for="Language">
+                <option></option>
+                <option value="C#">C#</option>
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C++">C++</option>
+            </select>
+            <span class="text-danger" asp-validation-for="Language"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Comment">Comment</label>
+            <textarea class="form-control" asp-for="Comment" placeholder="Type Comment Here"></textarea>
+            <span class="text-danger" asp-validation-for="Comment"></span>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+
+</div>
