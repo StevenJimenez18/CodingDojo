@@ -1,0 +1,13 @@
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\bin\Debug\netcoreapp3.1\FundementalsI.exe
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\bin\Debug\netcoreapp3.1\FundementalsI.deps.json
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\bin\Debug\netcoreapp3.1\FundementalsI.runtimeconfig.json
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\bin\Debug\netcoreapp3.1\FundementalsI.runtimeconfig.dev.json
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\bin\Debug\netcoreapp3.1\FundementalsI.dll
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\bin\Debug\netcoreapp3.1\FundementalsI.pdb
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\obj\Debug\netcoreapp3.1\FundementalsI.csprojAssemblyReference.cache
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\obj\Debug\netcoreapp3.1\FundementalsI.AssemblyInfoInputs.cache
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\obj\Debug\netcoreapp3.1\FundementalsI.AssemblyInfo.cs
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\obj\Debug\netcoreapp3.1\FundementalsI.csproj.CoreCompileInputs.cache
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\obj\Debug\netcoreapp3.1\FundementalsI.dll
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\obj\Debug\netcoreapp3.1\FundementalsI.pdb
+C:\Users\Steven\Desktop\CodingDojo\.Net\FundementalsI\obj\Debug\netcoreapp3.1\FundementalsI.genruntimeconfig.cache
