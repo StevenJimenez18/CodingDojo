@@ -1,0 +1,27 @@
+dojo1 = Dojo.objects.create(name="Coding Dojo Bellevue", city="Bellevue", state="Washington")
+
+dojo2 = Dojo.objects.create(name="Coding Dojo Arlington", city="Arlington", state="Virginia")
+
+dojo3 = Dojo.objects.create(name="Coding Dojo Chicago", city="Chicago", state="Illinois")
+
+Dojo.objects.all().delete()
+
+dojo1 = Dojo.objects.create(name="Coding Dojo Bellevue", city="Bellevue", state="Washington")
+
+dojo2 = Dojo.objects.create(name="Coding Dojo Arlington", city="Arlington", state="Virginia")
+
+dojo3 = Dojo.objects.create(name="Coding Dojo Chicago", city="Chicago", state="Illinois")
+
+ninja1 = Ninjas.objects.create(first_name = "Leroy", last_name="Jenkins", dojo = dojo1)
+
+ ninja2 = Ninjas.objects.create(first_name = "Carol", last_name="Baskins", dojo = dojo2)
+
+ninja3 = Ninjas.objects.create(first_name = "Tommy", last_name="GreenRanger", dojo = dojo3)
+
+dojo1.dojo_ninjas.all()
+
+ninja9.dojo.name
+
+dojo4 = Dojo.objects.create(name="Coding Dojo Dallas", city="Dallas", state="Texas", desc = "Welcome to Coding Dojo.")
+
+dojo4.desc

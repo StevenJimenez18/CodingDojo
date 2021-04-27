@@ -1,0 +1,9 @@
+Users.objects.all()
+Users.objects.get(id=1)
+user1 = Users.objects.create(first_name = "Carol", last_name = "Baskins", email_address = "coolcatsandkittens@gmail.com", age = 55) 
+carol = Users.objects.get(id=4)
+carol.last_name
+carol.last_name = "pancakes"
+carol.save()
+users.objects.get(id=2)
+Users.objects.get(id=5).delete()
