@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="jqueryfunctions.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    
+
+    $('#click').click(function(){
+        alert('Hello there!.');
+    });
+
+    $('#button2').click(function(){
+        $('#hide').hide();
+    });
+
+    $('#button3').click(function(){
+        $('#show').show();
+    });
+
+    $('#button4').click(function(){
+        $('#toggle').toggle();
+    });
+    $('#button5').click(function(){
+        $('#slidedown').slideDown();
+    });
+    $("#slidedown").click(function(){
+    $("#paneldown").slideDown("slow");
+    });
+
+    $("#slideup").click(function(){
+    $("#panelup").slideUp("slow");
+    });
+
+    $("#slidetoggle").click(function(){
+    $("#paneltoggle").slideToggle("slow");
+    });
+
+    $('#button8').click(function(){
+        $("#fadein").fadeIn(1000);
+    });
+
+    $('#button9').click(function(){
+        $("#fadeout").fadeOut(1000);
+    });
+
+    $("#button10").click(function(){
+    $("#addclass").addClass("addtoclass");
+    });
+
+    $("#button11").click(function(){
+    $("#before").before("<b> This is new text.</b>");
+    });
+
+    $("#button12").click(function(){
+    $("#after").after("<b> This is new text.</b>");
+    });
+
+    $("#button13").click(function(){
+    $("#append").append("<b> This is appended text.</b>");
+    });
+
+    $("#button14").click(function(){
+    $("#html").html("This is now changed <b>HTML</b>");
+    });
+
+    $("#button15").click(function(){
+    $("text").attr("background-color:red");
+    });
+
+    $("#button16").click(function(){
+    $("").val("This is new text!");
+    });
+
+    $("#button17").click(function(){
+    $("").text("This is new text!");
+    });
+
+});</script>
+</head>
+<body>
+    <div id='wrapper'>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button"><span id=click>Click</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Click</h2>
+                    <p> Click the button for a susprise.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button2"><span id='hide'>Hide</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Hide</h2>
+                    <p> Click the button to hide the text inside.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button3"><span id=show style="width:80px;height:80px;display:none;">Show</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Show</h2>
+                    <p> Clikc the button to show the text.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button4"><span id="toggle">Toggle</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Toggle</h2>
+                    <p> Click the button to toggle the text!</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button5"><span id="slidedown">SlideDown</span><div id="paneldown">Hello!</div></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>SlideDown</h2>
+                    <p> Click the button to slide down new text!</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button6"><span id="slideup">SlideUp</span><div id="panelup">Goodbye!!</div></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>SlideUp</h2>
+                    <p> Click the button to Slide the text up.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button7"><span id='slidetoggle'>SlideToggle</span><div id="paneltoggle">Hi and Bye!!!</div></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>SlideToggle</h2>
+                    <p> Click the button to Slide toggle the text!</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button8"><span id='fadein' style="width:80px;height:80px;display:none;">FadeIn</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Fade In</h2>
+                    <p> Click the button to fade in the text.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button9"><span id="fadeout" style="width:80px;height:80px;">FadeOut</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Fade Out</h2>
+                    <p> Click the button to fade out the text.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button10"><span id='addclass'>AddClass</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Add Class</h2>
+                    <p> Click the button to add a class to the text which will change its appearance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button11"><span id='before'>Before</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Before</h2>
+                    <p> Click the button to add text. New text will be added before the present one.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button12"><span id='after'>After</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>After</h2>
+                    <p> Click the button to add text. New text will be added after the present one.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button13"><span id='append'>Append</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Append</h2>
+                    <p> Click the button to append text to what is present.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button14"><span id='html'>HTML</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>HTML</h2>
+                    <p> Click the button to change the HTML of the text.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button15"><span id='attr'>Attr</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Attr</h2>
+                    <p> Clikc the button to return set attributes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button16"><span id='val'>Val</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Val</h2>
+                    <p> Click to return more attributes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="buttonfield">
+                <div id="button17"><span id='text'>Text</span></div>
+            </div>
+            <div class="textfieldwrapper">
+                <div class="textfield">
+                    <h2>Text</h2>
+                    <p> Click to return text content of selected elements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
