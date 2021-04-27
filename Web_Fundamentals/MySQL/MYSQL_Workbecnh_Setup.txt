@@ -1,0 +1,13 @@
+//Create
+INSERT INTO twitter.users (first_name, last_name) VALUES ('Test', 'name')
+
+//Read
+SELECT * 
+FROM twitter.users
+
+//Update
+UPDATE twitter.users 
+SET first_name= 'newTest', last_name = 'newName' WHERE id = 6
+
+//Delete
+DELETE FROM twitter.users WHERE id = 6
